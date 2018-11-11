@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title text-left>{{params.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!--Content-->
+<ion-content>
+    <!--Radio Button - LAYOUT 1 component-->
+    <radio-button-layout-1 *ngIf="params.radioButtonLayout1" [data]="params.data | async" [events]="params.events">
+    </radio-button-layout-1>
+
+    <!--Radio Button - LAYOUT 2 component-->
+    <radio-button-layout-2 *ngIf="params.radioButtonLayout2" [data]="params.data | async" [events]="params.events">
+    </radio-button-layout-2>
+
+    <!--Radio Button - LAYOUT 3 component-->
+    <radio-button-layout-3 *ngIf="params.radioButtonLayout3" [data]="params.data | async" [events]="params.events">
+    </radio-button-layout-3>
+</ion-content>

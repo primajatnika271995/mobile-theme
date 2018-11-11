@@ -1,0 +1,26 @@
+[tab-6] {
+  ion-card {
+    box-shadow: none !important;
+    border-radius: $border-radius;
+  }
+
+  [card-image] {
+    position: relative;
+
+    ion-badge {
+      right: 65px;
+      bottom: 10px;
+      z-index: 3;
+      padding: 6px 15px !important;
+    }
+  }
+
+  [button-action-shit] {
+    right: 16px;
+    bottom: 5px;
+  }
+
+  [card-subtitle] {
+    margin-bottom: 40px;
+  }
+}
